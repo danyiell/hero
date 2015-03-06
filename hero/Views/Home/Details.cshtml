@@ -1,0 +1,90 @@
+﻿@model hero.herotbl
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>herotbl</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.From)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.From)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Powers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Powers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Weapons)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weapons)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enemy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enemy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KnownFriends)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KnownFriends)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Groups)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Groups)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Search")
+</p>

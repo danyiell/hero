@@ -1,0 +1,48 @@
+﻿
+@model hero.herotbl
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Details</h2>
+
+<p>
+    @Html.ActionLink("Return to Home", "back")
+</p>
+    <div class="main">
+        <div>
+           <h1> @Model.Name</h1>
+            <br />
+        </div>
+        <div class="pic-info">
+          <div class="info">
+           <p>
+                 <strong>From:</strong>  @Model.From
+              <br />
+                 <strong>Powers:</strong>  @Model.Powers
+              <br />
+                 <strong>Weapons:</strong>  @Model.Weapons
+              <br />
+                 <strong>Enemy:</strong>  @Model.Enemy
+              <br />
+                <strong>Known Friends:</strong>  @Model.KnownFriends
+              <br />
+                <strong>Groups:</strong>  @Model.Groups
+              <br />
+            </p>
+          </div>
+          <div class="pic">
+              <img class="hero_img" src="@Model.Image"/>
+          </div> 
+               
+        </div>
+        
+       <div class="desc">       
+           <strong>Description:</strong>
+             @Model.Description
+       </div>
+    </div>
+   
+
+
